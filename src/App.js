@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import './App.css';
 import './components/header.js';
 import Header from './components/header.js';
+import Navbar from './components/navbar.js';
 import Timer from './components/timer.js';
-
+import Sponsors from './components/sponsors.js';
+import Footer from './components/footer.js';
+import Agenda from './components/agenda.js';
 // loga sponsorow
 import Britenet from './img/britenet.png';
+import Pollub from './img/pollubnet.png';
+
+import Sollers from './img/sollers.png';
 import Asseco from './img/asseco.jpg';
 import Billennium from './img/billennium.jpg';
 import Codete from './img/codete.png';
@@ -17,18 +23,22 @@ import WIT from './img/wyzynaIT.png';
 import xPlus from './img/xplus.png';
 import YouLead from './img/youlead.png';
 
-const sponsors = {
+const goldenSponsors = {
     "Asseco":  Asseco,
+    "Sollers": Sollers,
+    "EleaderFinanteq": EleaderFinanteq,
+    "xPlus":  xPlus 
+}
+
+const partners = {
     "Billennium":  Billennium,
     "Codete":  Codete,
-    "EleaderFinanteq": EleaderFinanteq,
     "Sii":  Sii,
     "WIT":  WIT,
-    "xPlus":  xPlus ,
-    "YouLead":  YouLead,
     "Ms":  Ms,
     "Fundacja":  Fundacja
 };
+
 
 class App extends Component {
 
@@ -36,14 +46,7 @@ class App extends Component {
     return (
       <div>
       <Header/>
-      <div className="navbar-wrapper">
-          <nav className="navbar" id="navbar">
-              <a href="#itad">ITAD '18</a>
-              <a href="#mapa">Jak dojechać?</a>
-              <a href="#galeria">Galeria</a>
-              <a href="#partnerzy">Partnerzy</a>
-          </nav>
-      </div>
+      <Navbar/>
 
       <section className="section-about" id="itad">
           <h3 className="light light-line">O wydarzeniu</h3>
@@ -59,13 +62,15 @@ class App extends Component {
                   <br/> Więcej informacji o agendzie, firmach, konkursach czy aktualnościach możecie znaleźć na Facebooku.
                 </p>
           </div>
-
           <div className="about-timer">
               <h3 className="in-section light">IT Academic Day 2018 odbędzie się już za</h3>
                 <Timer/>
           </div>
       </section>
+      <section id="galeria">
 
+      </section>
+      <Agenda/>
       <section className="section-map" id="mapa">
           <h3 className="dark-line">Jak dojechać?</h3>
           <div className="map">
@@ -93,23 +98,9 @@ class App extends Component {
           </div>
       </section>
 
-      <section className="section-sponsors" id="partnerzy">
-          <h3 className="dark-line">Partner Główny</h3>
-              <img src={Britenet} alt="Britenet" id="mainsponsor"/>
-          <h3 className="dark-line">Partnerzy</h3>
-          <div className="sponsors">
-              <div className="row">
-              </div>
-              { Object.keys(sponsors).map( sponsor => {
-                return <img src={sponsors[sponsor]} alt={sponsor} key={sponsor}/>
-              })}
-              <div className="row"></div>
-          </div>
-      </section>
+      <Sponsors mainsponsor={Britenet} goldensponsors={goldenSponsors} sponsor={YouLead} partners={partners}/>
 
-      <footer>
-          <p>pollub.net</p>
-      </footer>
+      <Footer logo={Pollub} />
     </div>
     );
   }

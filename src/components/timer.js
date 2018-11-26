@@ -34,8 +34,7 @@ class Timer extends Component {
         super(props);
         let today = new Date()
         let itad = new Date(2018,12,11,8,0,0);
-        let unixdiff = Math.abs(today.getTime() - itad.getTime());
-        let dayDelta = Math.ceil(unixdiff / (1000 * 3600 * 24)); 
+        let dayDelta = Math.abs(today.getDate() - itad.getDate());
         let hrsDelta = Math.abs(today.getHours() - itad.getHours());
         let minDelta = Math.abs(today.getMinutes() - itad.getMinutes())
         let secDelta = Math.abs(today.getSeconds() - itad.getSeconds())
@@ -50,8 +49,7 @@ class Timer extends Component {
     recalculateTime = () => {
         let today = new Date()
         let itad = new Date(2018,12,11,8,0,0);
-        let unixdiff = Math.abs(today.getTime() - itad.getTime());
-        let dayDelta = Math.ceil(unixdiff / (1000 * 3600 * 24)); 
+        let dayDelta = Math.abs(today.getDate() - itad.getDate());
         let hrsDelta = Math.abs(today.getHours() - itad.getHours());
         let minDelta = Math.abs(today.getMinutes() - itad.getMinutes());
         let secDelta = Math.abs(today.getSeconds() - itad.getSeconds());

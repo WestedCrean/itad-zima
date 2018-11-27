@@ -6,6 +6,8 @@
     "particlesjs": "^2.2.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-image-lightbox": "^5.0.0",
+    "react-images": "^0.5.19",
     "react-particles-js": "^2.4.0",
     "react-responsive": "^6.0.1",
     "react-scripts": "2.1.1",

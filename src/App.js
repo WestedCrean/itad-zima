@@ -7,6 +7,7 @@ import Timer from './components/timer.js';
 import Sponsors from './components/sponsors.js';
 import Footer from './components/footer.js';
 import Agenda from './components/agenda.js';
+
 // loga sponsorow
 import Britenet from './img/britenet.png';
 import Pollub from './img/pollubnet.png';
@@ -68,9 +69,12 @@ class App extends Component {
           </div>
       </section>
       <section id="galeria">
-
+      
       </section>
+      <section id="agenda">
       <Agenda/>
+      </section>
+    
       <section className="section-map" id="mapa">
           <h3 className="dark-line">Jak dojechać?</h3>
           <div className="map">

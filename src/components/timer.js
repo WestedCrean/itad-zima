@@ -65,7 +65,7 @@ class Timer extends Component {
     render() {
       return (
           <div>
-                <Paragraph>{this.state.dayDelta}:{this.state.hrsDelta}:{this.state.minDelta}:{this.state.secDelta}</Paragraph>
+                <Paragraph>&nbsp;&nbsp;{this.state.dayDelta}&nbsp;&nbsp;:&nbsp;&nbsp;{this.state.hrsDelta}&nbsp;&nbsp;:&nbsp;&nbsp;{this.state.minDelta}:&nbsp;&nbsp;{this.state.secDelta}&nbsp;&nbsp;</Paragraph>
                 <Subaragraph><span>Dni</span> <span>Godzin</span> <span>Minut</span> <span>Sekund</span></Subaragraph>
           </div>
       );

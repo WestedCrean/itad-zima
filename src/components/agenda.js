@@ -30,9 +30,24 @@ function Agenda(props) {
          <th>Tomasz Serafin, eLeader&Finanteq</th>
      </tr>
      <tr>
+         <th>12.15 - 13.05</th>
+         <th>"Agile w praktyce - czy zwinnie znaczy lepiej?"</th>
+         <th>Sollers Consulting</th>
+     </tr>
+     <tr>
+         <th>13.30 - 14.20</th>
+         <th>Uwolnić potencjał pracowników – transformacja cyfrowa oparta o platformę Microsoft Common Data Service for Apps</th>
+         <th>Rafał Dudziński, XPLUS</th>
+     </tr>
+     <tr>
          <th>14.30 - 15.20</th>
          <th>"Talent & Recruitment Specialist. 5 soft skills, które sprawią ze wyroznisz się na rynku IT"</th>
          <th>Karolina Kolibabska, Codete</th>
+     </tr>
+     <tr>
+         <th>15.30 - 16.20</th>
+         <th>Clean Code – zostań profesjonalnym programistą</th>
+         <th>Małgorzata Smołka, Sii</th>
      </tr>
      <tr>
          <th>16.30 - 17.00</th>

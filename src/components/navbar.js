@@ -42,8 +42,8 @@ function Navbar(props) {
     return(
           <Nav class="navbar" id="navbar">
               <Link href="#itad">ITAD '18</Link>
-              <Link href="#mapa">Jak dojechać?</Link>
-              <Link href="#galeria">Galeria</Link>
+              <Link href="#mapa">Jak dojechać?</Link>            
+              <Link href="#agenda">Agenda</Link>
               <Link href="#partnerzy">Partnerzy</Link>
           </Nav>
     );
